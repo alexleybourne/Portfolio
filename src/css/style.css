@@ -1,5 +1,5 @@
 :root {
-  --overlay-color: rgba(255, 255, 255, 0.85);
+  --overlay-color: rgba(255, 255, 255, 0.9);
   --menu-speed: 0.75s;
 }
 
@@ -48,10 +48,10 @@ body {
   text-align: center;
   height: 300px;
   box-sizing: border-box;
-  -webkit-animation: slide 20s linear infinite;
+  animation: slide 20s linear infinite;
 }
 /* Background Animation */
-@-webkit-keyframes slide {
+@keyframes slide {
   from {
     background-position: 0 0;
   }

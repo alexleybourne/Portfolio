@@ -142,3 +142,41 @@
   text-decoration: none;
   transition: color 0.4s ease;
 }
+
+.menu-link {
+  font-weight: 0;
+  letter-spacing: 1px;
+  transition:all 6s ease;
+}
+
+.menu-link:hover{
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.menu-selected {
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.underline {
+  padding: 0;
+  position: center;
+  z-index: 2;
+	margin:0;
+	height: 25px;
+	background: url('../images/Red-Underline.svg') repeat-x 0%;
+	background-size: contain;
+	animation: 10s wave linear infinite;
+	box-shadow:inner 0 0 1rem rgba(red,1);
+}
+
+@keyframes wave {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 200px 0;
+	}
+}
