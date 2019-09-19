@@ -74,7 +74,7 @@ body {
     background-position: -400px 0;
   }
 }
-
+/* Main Are */
 .main-content {
   margin: auto;
   padding: 6rem 0 0 0;
@@ -83,7 +83,7 @@ body {
   align-items: center;
   justify-items: center;
 }
-
+/* Main Text */
 .hero-text {
   z-index: -1;
   position: center;
@@ -96,7 +96,7 @@ body {
 .bottom-text {
   font-size: 30px;
 }
-
+/*  Pic of Me */
 .hero-image {
   position: relative;
   z-index: -2;
@@ -111,7 +111,7 @@ body {
   height: auto;
 }
 
-
+/* Shape Positions */
 .shape-circle {
   position: absolute;
   z-index: -3;
@@ -137,7 +137,7 @@ body {
   height: auto;
   animation: squiggle-float 9s ease infinite;
 }
-
+/* Social Icons */
 .social-section {
   padding: 1rem 10px 10px 10px;
 }
@@ -145,27 +145,180 @@ body {
 .social-link {
   width: 90px;
   height: auto;
+  transition: 0.3s;
 }
 
+.social-link:hover {
+  opacity: 0.6;
+}
 
+/* Spin Animation for Triangle */
 @keyframes triangle-spin {
   from { transform: translate(-160px, 50px) rotate(0deg); 
     transform-origin: 50% 60%;}
   to { transform:  translate(-160px, 50px) rotate(359deg); 
        transform-origin: 50% 60%;}
 }
-
+/* Floating animation for Squiggle */
 @keyframes squiggle-float {
   0% { transform: translate(-170px, 280px); }
   50% { transform: translate(-170px, 240px); }
 }
-
+/* Growing Circle Animation */
 @keyframes circle-grow {
   0% {  transform: scale(1.0)
     translate(-330px, 90px); }
   50% { transform: scale(1.1)
     translate(-330px, 90px);}
 }
+
+/* ABOUT PAGE STYLING */
+
+.hero-text-about {
+  position: center;
+  font-size: 50px;
+}
+
+.text-one {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  padding: 1.5rem 4rem 1.5rem 4rem;
+  text-align: left;
+}
+
+/* Text */
+.text-two {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  padding: 1.5rem 2rem 1.5rem 4rem;
+  text-align: right;
+}
+
+.text-three {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  padding: 1.5rem 4rem 1.5rem 4rem;
+  text-align: left;
+}
+
+.text-four {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  padding: 1.5rem 2rem 1.5rem 4rem;
+  text-align: right;
+}
+
+
+
+/* Lines */
+.green-line {
+  height: auto;
+  width: 18px;
+  padding: 0 10px 0 0;
+}
+
+.blue-line {
+  height: auto;
+  width: 18px;
+  padding: 0 0 0 10px;
+}
+
+.red-line {
+  height: auto;
+  width: 18px;
+  padding: 0 10px 0 0;
+}
+
+.yellow-line {
+  height: auto;
+  width: 18px;
+  padding: 0 0 0 10px;
+}
+
+/* Shapes */
+
+.shape-circle-about{
+  position: absolute;
+  z-index: -3;
+  transform: translate(80px, -10px);
+  width: 22vw;
+  height: auto;
+}
+
+.shape-circle2-about{
+  position: absolute;
+  z-index: -3;
+  transform: translate(-150px, 300px);
+  width: 8vw;
+  height: auto;
+  animation: circle-grow-about 9s ease infinite;
+}
+
+.shape-square-about{
+  position: absolute;
+  z-index: -3;
+  transform: translate(150px, 200px);
+  width: 8vw;
+  height: auto;
+  animation: square-spin-about 22s linear infinite;
+}
+
+.shape-triangle-about{
+  position: absolute;
+  z-index: -3;
+  transform: translate(170px, 480px);
+  width: 20vw;
+  height: auto;
+  animation: triangle-spin-about 10s linear infinite;
+}
+
+.shape-squiggle-about{
+  position: absolute;
+  z-index: -3;
+  transform: translate(-190px, 700px);
+  width: 30vw;
+  height: auto;
+  animation: squiggle-float-about 9s ease infinite;
+}
+
+/* Animations */
+@keyframes square-spin-about {
+  from { transform: translate(150px, 200px) rotate(0deg); 
+    transform-origin: 50% 60%;}
+  to { transform:  translate(150px, 200px) rotate(359deg); 
+       transform-origin: 50% 60%;}
+}
+
+@keyframes circle-grow-about {
+  0% {  transform: scale(1.0)
+    translate(-150px, 300px); }
+  50% { transform: scale(1.2)
+    translate(-150px, 300px);}
+}
+
+@keyframes triangle-spin-about {
+  from { transform: translate(170px, 480px) rotate(0deg); 
+    transform-origin: 50% 60%;}
+  to { transform:  translate(170px, 480px) rotate(359deg); 
+       transform-origin: 50% 60%;}
+}
+
+@keyframes squiggle-float-about {
+  0% { transform: translate(-190px, 700px); }
+  50% { transform: translate(-190px, 600px); }
+}
+
+
+
+
+
+
+
+
 
 /* Desktop Responsive Changes */
 @media (min-width:850px) {
@@ -179,7 +332,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-
+  /* Logo and Logo Text Bigger */
   .logo {
     width: 120px;
     height: auto;
@@ -192,7 +345,7 @@ body {
     font-weight: bolder;
     font-size: 40px;
   }
-
+  /* Text Bigger and Left */
   .hero-text {
     z-index: -1;
     position: center;
@@ -206,19 +359,19 @@ body {
   .bottom-text {
     font-size: 3vw;
   }
-
+/* Socials moved under text */
   .social-section {
     order: -1;
     padding: 1rem 10px 10px 10px;
   }
-
+ /* Image Scale */
   .me-image{
     z-index: -2;
     padding: 1rem 0 0 0;
     height: 80vh;
     width: auto;
   }
-  
+  /* Change shape positions and scale */
   .shape-circle {
     position: absolute;
     z-index: -3;
@@ -245,7 +398,7 @@ body {
     animation: squiggle-float 9s ease infinite;
   }
 
-
+/* Adjust shape positions in animation */
   @keyframes triangle-spin {
     from { transform: translate(-20vw, 4vh) rotate(0deg); 
       transform-origin: 50% 60%;}
