@@ -3,7 +3,8 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1;
+  padding: 3rem;
+  z-index: 2;
 }
 /* Making toggler invisible and positioning it */
 .menu-wrap .toggler {
@@ -22,9 +23,9 @@
   top: 0;
   right: 0;
   z-index: 1;
-  width: 80px;
-  height: 80px;
-  padding: 1rem;
+  width: 90px;
+  height: 90px;
+  padding: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +35,7 @@
 .menu-wrap .hamburger > div {
   position: relative;
   width: 100%;
-  height: 5px;
+  height: 4px;
   border-radius: 25px;
   background-color: black;
   display: flex;
@@ -49,16 +50,16 @@
   content: "";
   position: absolute;
   z-index: 1;
-  top: -20px;
+  top: -12px;
   width: 100%;
-  height: 5px;
+  height: 4px;
   border-radius: 25px;
   background: inherit;
 }
 
 /* Bottom line moved down */
 .menu-wrap .hamburger > div:after {
-  top: 20px;
+  top: 12px;
 }
 
 /* Toggler animate */

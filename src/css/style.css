@@ -12,7 +12,8 @@
 }
 
 nav {
-  position: absolute;
+  position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   display: flex;
@@ -29,6 +30,19 @@ nav {
   text-align: left;
   padding: 0px;
   font-weight: bolder;
+}
+
+.nav-bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  height: 112px;
+  width: 100vw;
+  background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%,
+ rgba(255,255,255,1) 67%, rgba(255,255,255,0.3412552521008403) 83%, 
+ rgba(255,255,255,0) 100%);
 }
 
 header {
@@ -100,13 +114,45 @@ body {
 }
 
 .hero-image {
-  z-index: -1;
+  position: relative;
+  z-index: -2;
+  padding: 0;
+  margin: 0;
 }
 
 .me-image{
+  z-index: -2;
   padding: 1rem 0 0 0;
   width: 90%;
   height: auto;
+}
+
+
+.shape-circle {
+  position: absolute;
+  z-index: -3;
+  transform: translate(-330px, 90px);
+  width: 45vw;
+  height: auto;
+  animation: circle-grow 6s ease infinite;
+}
+
+.shape-triangle {
+  position: absolute;
+  z-index: -4;
+  /* transform: translate(-350px, 70px); */
+  width: 40vw;
+  height: auto;
+  animation: triangle-spin 10s linear infinite;
+}
+
+.shape-squiggle {
+  position: absolute;
+  z-index: 1;
+  transform: translate(-170px, 280px);
+  width: 46vw;
+  height: auto;
+  animation: squiggle-float 9s ease infinite;
 }
 
 .social-section {
@@ -116,4 +162,24 @@ body {
 .social-link {
   width: 90px;
   height: auto;
+}
+
+
+@keyframes triangle-spin {
+  from { transform: translate(-160px, 50px) rotate(0deg); 
+    transform-origin: 50% 60%;}
+  to { transform:  translate(-160px, 50px) rotate(359deg); 
+       transform-origin: 50% 60%;}
+}
+
+@keyframes squiggle-float {
+  0% { transform: translate(-170px, 280px); }
+  50% { transform: translate(-170px, 240px); }
+}
+
+@keyframes circle-grow {
+  0% {  transform: scale(1.0)
+    translate(-330px, 90px); }
+  50% { transform: scale(1.1)
+    translate(-330px, 90px);}
 }
