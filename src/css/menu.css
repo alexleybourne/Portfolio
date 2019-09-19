@@ -181,3 +181,60 @@
 		background-position: 200px 0;
 	}
 }
+
+/* Desktop Responsive Changes */
+@media (min-width:850px) {
+  
+  /* Hamburger Menu */
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 120px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.8rem;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  border-radius: 25px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/* Top and Bottom lines */
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -18px;
+  width: 100%;
+  height: 8px;
+  border-radius: 25px;
+  background: inherit;
+}
+
+/* Bottom line moved down */
+.menu-wrap .hamburger > div:after {
+  top: 18px;
+}
+
+/* Menu text / items style */
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: black;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+}

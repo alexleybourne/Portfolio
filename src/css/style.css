@@ -18,11 +18,11 @@ nav {
   left: 0;
   display: flex;
   align-items: center;
-  line-height: 80%;
 }
 
 .logo {
   width: 75px;
+  height: auto;
   padding: 1rem 5px 1rem 1rem;
 }
 
@@ -30,6 +30,7 @@ nav {
   text-align: left;
   padding: 0px;
   font-weight: bolder;
+  line-height: 80%;
 }
 
 .nav-bg {
@@ -72,23 +73,6 @@ body {
   to {
     background-position: -400px 0;
   }
-}
-
-
-
-.btn {
-  display: inline-block;
-  border: none;
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  margin-top: 1rem;
-  text-decoration: none;
-  transition: opacity 0.5s ease-in;
-}
-
-.btn:hover {
-  opacity: 0.5;
 }
 
 .main-content {
@@ -140,7 +124,6 @@ body {
 .shape-triangle {
   position: absolute;
   z-index: -4;
-  /* transform: translate(-350px, 70px); */
   width: 40vw;
   height: auto;
   animation: triangle-spin 10s linear infinite;
@@ -182,4 +165,103 @@ body {
     translate(-330px, 90px); }
   50% { transform: scale(1.1)
     translate(-330px, 90px);}
+}
+
+/* Desktop Responsive Changes */
+@media (min-width:850px) {
+  
+  .main-content {
+    margin: auto;
+    height: 100vh;
+    padding: 6rem 0 0 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    width: 120px;
+    height: auto;
+    padding: 1rem 5px 1rem 1rem;
+  }
+  
+  .logo-text {
+    text-align: left;
+    padding: 0px;
+    font-weight: bolder;
+    font-size: 40px;
+  }
+
+  .hero-text {
+    z-index: -1;
+    position: center;
+    order: -2;
+  }
+  
+  .top-text {
+    font-size: 5vw;
+  }
+  
+  .bottom-text {
+    font-size: 3vw;
+  }
+
+  .social-section {
+    order: -1;
+    padding: 1rem 10px 10px 10px;
+  }
+
+  .me-image{
+    z-index: -2;
+    padding: 1rem 0 0 0;
+    height: 80vh;
+    width: auto;
+  }
+  
+  .shape-circle {
+    position: absolute;
+    z-index: -3;
+    transform: translate(-40vw, 30vh);
+    width: 40vh;
+    height: auto;
+    animation: circle-grow 6s ease infinite;
+  }
+  
+  .shape-triangle {
+    position: absolute;
+    z-index: -4;
+    width: 36vh;
+    height: auto;
+    animation: triangle-spin 10s linear infinite;
+  }
+  
+  .shape-squiggle {
+    position: absolute;
+    z-index: 1;
+    transform: translate(-14vw, 60vh);
+    width: 30vh;
+    height: auto;
+    animation: squiggle-float 9s ease infinite;
+  }
+
+
+  @keyframes triangle-spin {
+    from { transform: translate(-20vw, 4vh) rotate(0deg); 
+      transform-origin: 50% 60%;}
+    to { transform:  translate(-20vw, 4vh) rotate(359deg); 
+         transform-origin: 50% 60%;}
+  }
+  
+  @keyframes squiggle-float {
+    0% { transform: translate(-14vw, 60vh); }
+    50% { transform: translate(-14vw, 50vh); }
+  }
+  
+  @keyframes circle-grow {
+    0% {  transform: scale(1.0)
+      translate(-40vw, 30vh); }
+    50% { transform: scale(1.1)
+      translate(-40vw, 30vh);}
+  }
 }
