@@ -1,3 +1,9 @@
+.main-content {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
 .header-text {
 position: center;
   font-size: 50px;
@@ -34,30 +40,39 @@ position: center;
   .skill-icon {
       height: auto;
       width: 100px;
+      transform: rotate(0deg);
+      transition: all ease 1s;
   }
 
   .skill-icon:hover {
     height: auto;
     width: 100px;
-    animation:wobble-hor-bottom .8s ease;
+    transform: rotate(360deg);
 }
 
-  .skill-behind {
-    position: absolute;
-    height: auto;
-    width: 100px;
-    z-index: -3;
-    animation: shape-spin 4s linear infinite;
+  
+
+
+  @keyframes hover {
+    from { transform:  translate(0px, 0px) rotate(0deg);}
+    to { transform:  translate(0px, 0px) rotate(359deg);
   }
 
-  #microsoft-square {
-    height: auto;
-    width: 50px;
   }
 
-  @keyframes shape-spin {
-    from { transform:  translate(-100px, 0px) rotate(0deg);}
-    to { transform:  translate(-100px, 0px) rotate(359deg);
+  @media (min-width:850px) {
+    .header-text {
+      font-size: 150px;
+      padding: 4rem 0 0 0;
+    }
+
+    .under-text {
+      font-size: 30px;
   }
+
+  .single-skill {
+    padding: 4rem;
+    font-size: 30px;
+}
 
   }

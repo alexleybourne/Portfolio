@@ -6,7 +6,6 @@ document.querySelector("#toggler").addEventListener("keyup", function(event) {
 });
 
 document.querySelector("#toggler").addEventListener("click", () => {
-  document.querySelector(".menu").classList.toggle("open");
   document.querySelector("#hamburger").style.border = "none";
 });
 
