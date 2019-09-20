@@ -28,8 +28,9 @@
     </nav>
     <!-- Hamburger Menu and Menu items -->
     <div class="menu-wrap">
-      <input title="Menu button" type="checkbox" class="toggler" />
-      <div class="hamburger"><div></div></div>
+      <!-- Accessability aditions for menu clicks -->
+      <input tabindex="0" aria-checked="false" aria-labelledby="menu" role="checkbox" title="Menu button" type="checkbox"  id="toggler" class="toggler"/>
+      <div class="hamburger" id="hamburger"><div></div></div>
       <div class="menu">
         <div>
           <div>
@@ -101,5 +102,6 @@
         </div>
       </div>
     </main>
+    <script src="scripts/accessability.js"></script>
   </body>
 </html>

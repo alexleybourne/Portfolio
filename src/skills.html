@@ -25,14 +25,15 @@
     <div class="nav-bg"></div>
     </nav>
 <!-- Hamburger Menu and Menu items -->
-    <div class="menu-wrap">
-        <input title="Menu button" type="checkbox" class="toggler"/>
-        <div class="hamburger"><div></div></div>
-        <div class="menu">
-          <div>
-            <div>
-              <ul> 
-                <!-- Menu Items -->
+<div class="menu-wrap">
+    <!-- Accessability aditions for menu clicks -->
+    <input tabindex="0" aria-checked="false" aria-labelledby="menu" role="checkbox" title="Menu button" type="checkbox"  id="toggler" class="toggler"/>
+    <div class="hamburger" id="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <!-- Menu Items -->
                 <li><a class="menu-link" href="/index.html" alt="Home">Home</a></li>
                 <li><a class="menu-link" href="/about.html" alt="About">About</a></li>
                 <li><a class="menu-selected" href="/skills.html" alt="Skills">Skills</a></li>
@@ -60,6 +61,7 @@
               <!-- CSS -->
               <div class="single-skill">
                   <img class="skill-icon" src="https://image.flaticon.com/icons/svg/732/732190.svg" alt="Css Icon" >
+                  <img class="skill-behind" id="triangle" src="/images/Red-triangle.svg" alt="Team Icon" >
                   <p>CSS</p>
               </div>
               <!-- Ruby -->
@@ -102,8 +104,8 @@
               </div>
               <!-- Microsoft Suite -->
               <div class="single-skill">
-                  <img class="skill-icon" src="https://www.pinclipart.com/picdir/middle/125-1259339_5-useful-microsoft-office-365-features-that-youve.png" alt="microsoft suite Icon" >
-                  <img class="skill-behind" src="https://www.pinclipart.com/picdir/middle/125-1259339_5-useful-microsoft-office-365-features-that-youve.png" alt="microsoft suite Icon" >
+                  <img class="skill-icon" src="https://cdn3.iconfinder.com/data/icons/microsoft-office-2014/625/microsoft_office-512.png" alt="microsoft suite Icon" >
+                  <img class="skill-behind" id="microsoft-square"src="/images/Green-square.svg" >
                   <p>Microsoft Suite</p>
               </div>
               </div>
@@ -119,7 +121,7 @@
               <div class="skill-icons">
                   <div class="single-skill">
                       <img class="skill-icon" src="https://img.icons8.com/ios/150/000000/t.png" alt="Team Icon" >
-                      <img class="skill-behind" src="https://img.icons8.com/ios/150/000000/t.png" alt="Team Icon" >
+                      <img class="skill-behind" src="/images/Red-triangle.svg" alt="Team Icon" >
                   </div>
                   <p class="single-skill">Team Player</p>
               </div>
@@ -128,5 +130,6 @@
             </div>
         </div>    
     </main>
+    <script src="scripts/accessability.js"></script>
   </body>
 </html>

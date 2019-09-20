@@ -34,19 +34,23 @@ position: center;
   .skill-icon {
       height: auto;
       width: 100px;
-      animation: shape-spin 10s linear infinite;
-
   }
 
   .skill-behind {
+    position: absolute;
     height: auto;
     width: 100px;
-    position: absolute;
-    z-index: -2;
-    transform:  translate(-100px, 0px)
+    z-index: -3;
+    animation: shape-spin 4s linear infinite;
   }
-  
+
+  #microsoft-square {
+    height: auto;
+    width: 50px;
+  }
+
   @keyframes shape-spin {
-    from { transform: rotate(0deg);}
-    to { transform: rotate(359deg);}
+    from { transform:  translate(-100px, 0px) rotate(0deg);}
+    to { transform:  translate(-100px, 0px) rotate(359deg);
+    }
   }

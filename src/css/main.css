@@ -3,6 +3,11 @@
   --menu-speed: 0.75s;
 }
 
+/* Help Accessability by provinding outline*/
+a:focus {
+  outline: 2px solid;
+  outline-offset: .15em;
+ }
 
 * {
   box-sizing: border-box;
