@@ -245,4 +245,10 @@
   .underline {
     width: 260px;
   }
+/* Makes selected page name bigger */
+  .menu-selected {
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
 }

@@ -1,0 +1,52 @@
+.header-text {
+position: center;
+  font-size: 50px;
+}
+
+.under-text {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.section-title {
+    padding: 2rem 0 0 0;
+    font-weight: 700;
+    font-size: 30px;
+    opacity: 0.6;
+}
+
+.skill-icons {
+    padding: 1rem 0 0 0;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+.single-skill {
+    padding: 1rem;
+    font-size: 20px;
+}
+
+  .skill-icon {
+      height: auto;
+      width: 100px;
+      animation: shape-spin 10s linear infinite;
+
+  }
+
+  .skill-behind {
+    height: auto;
+    width: 100px;
+    position: absolute;
+    z-index: -2;
+    transform:  translate(-100px, 0px)
+  }
+  
+  @keyframes shape-spin {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(359deg);}
+  }
