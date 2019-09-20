@@ -36,6 +36,12 @@ position: center;
       width: 100px;
   }
 
+  .skill-icon:hover {
+    height: auto;
+    width: 100px;
+    animation:wobble-hor-bottom .8s ease;
+}
+
   .skill-behind {
     position: absolute;
     height: auto;
@@ -52,5 +58,6 @@ position: center;
   @keyframes shape-spin {
     from { transform:  translate(-100px, 0px) rotate(0deg);}
     to { transform:  translate(-100px, 0px) rotate(359deg);
-    }
+  }
+
   }
