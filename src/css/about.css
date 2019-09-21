@@ -1,5 +1,11 @@
 /* ABOUT PAGE STYLING */
 
+.main-content {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
 .hero-text-about {
   position: center;
   font-size: 50px;
@@ -152,8 +158,13 @@
 /* Adjustments for desktop
 Mainly the painful shapes */
 
-@media (min-width: 850px) {
+@media (min-width: 1000px) {
   .main-content {
+    display: flex;
+  
+      flex-direction: column;
+      overflow-x: hidden;
+
       position: center;
   }
   
