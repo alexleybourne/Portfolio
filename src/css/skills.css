@@ -50,6 +50,7 @@ a {
   transition: all ease 1s;
 }
 
+
 .single-skill:hover > .skill-icon {
   height: auto;
   width: 100px;
