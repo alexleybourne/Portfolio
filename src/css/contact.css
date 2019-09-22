@@ -48,27 +48,6 @@ a:hover > .social-icon {
   width: 140px;
 }
 
-
-p {
-  font-size: 26px;
-  transition: all ease 1s;
-}
-
-.single-icon:hover > p {
-  font-size: 30px;
-}
-
-/* Roatation animation on hover */
-
-@keyframes hover {
-  from {
-    transform: translate(0px, 0px) rotate(0deg);
-  }
-  to {
-    transform: translate(0px, 0px) rotate(359deg);
-  }
-}
-
 /* Shapes! */
 .shapes {
   padding: 0;
@@ -80,7 +59,7 @@ p {
   z-index: -4;
   width: 40vw;
   height: auto;
-  transform: translate(-6vw, 18vh);
+  transform: translate(-6vw, 19vh);
 }
 
 .shape-squiggle1 {
@@ -190,21 +169,6 @@ p {
     width: 250px;
     background-color: rgba(rgba(20, 137, 255, 0.74))
   }
-
-.behind {
-  position: absolute;
-  transform: translate(0vw, 0vh);
-  height: 0vh;
-  width: 0vw;
-  z-index: -3;
-  transition: all ease 1s;
-}
-
-a:hover > .behind {
-height: 300vh;
-width: 300vw;
-}
-
  /* Shapes.... Agaain.... */
 
  .shape-squiggleUnder {
@@ -212,7 +176,7 @@ width: 300vw;
   z-index: -4;
   width: 20vw;
   height: auto;
-  transform: translate(-1vw, 24vh);
+  transform: translate(-1vw, 27vh);
 }
 
  .shape-squiggle1 {
