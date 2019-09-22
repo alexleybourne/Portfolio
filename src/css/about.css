@@ -171,17 +171,19 @@ Mainly the painful shapes */
   }
   
     .hero-text-about {
-    padding: 1rem 0 0 0;
+    padding: 10vh 0 0 0;
     position: center;
-    font-size: 12vw;
+    font-size: 10vw;
   }
 
   .row {
-    font-size: 30px;
+    padding: 0 0 10vh 0;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    overflow-x: hidden;
   }
 
   
