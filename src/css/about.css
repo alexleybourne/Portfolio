@@ -1,17 +1,18 @@
 /* ABOUT PAGE STYLING */
 
+/* Layouts for main contetn area */
 .main-content {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
 }
-
+/* Large Text */
 .hero-text-about {
   position: center;
   font-size: 50px;
 }
 
-
+/* Text parts sizing etc. */
 .text-one {
   display: flex;
   align-content: flex-start;

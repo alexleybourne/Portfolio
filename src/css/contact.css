@@ -1,19 +1,20 @@
+/* Contacts Page Styling */
 .main-content {
   display: flex;
   width: 100%;
   height: auto;
 }
-
+/* Big text */
 .header-text {
   position: center;
   font-size: 50px;
 }
-
+/* Under text */
 .under-text {
   font-weight: 700;
   font-size: 16px;
 }
-
+/* Hides link styles */
 a {
   color: inherit;
   text-decoration: none;
@@ -32,6 +33,7 @@ a {
   width: 100%;
 }
 
+/* Padding */
 .single-icon {
   padding: 1rem;
   font-size: 20px;
@@ -42,7 +44,7 @@ a {
   width: 130px;
   transition: all ease 1s;
 }
-
+/* Hover makes them groww */
 a:hover > .social-icon {
   height: auto;
   width: 140px;
@@ -135,7 +137,10 @@ a:hover > .social-icon {
     transform: translate(10vw, 50vh);
   }
 } 
+
+
 /* Laptop / desktop adjustments */
+
 @media (min-width: 850px) {
   .header-text {
     font-size: 150px;

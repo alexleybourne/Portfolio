@@ -180,6 +180,11 @@ body {
 
 /* Desktop Responsive Changes */
 @media (min-width:850px) {
+
+.nav-bg {
+  height: 16vh;
+}
+
   .main-content {
     margin: auto;
     height: 100vh;
