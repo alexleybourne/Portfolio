@@ -162,16 +162,18 @@ Mainly the painful shapes */
   .main-content {
     display: flex;
   
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
       overflow-x: hidden;
-
+      align-content: center;
+      justify-content: center;
       position: center;
   }
   
     .hero-text-about {
     padding: 1rem 0 0 0;
     position: center;
-    font-size: 200px;
+    font-size: 12vw;
   }
 
   .row {
