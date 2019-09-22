@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Alex Leybourne - Article</title>
+    <meta name="description" content="Alex Leybourne's Portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/articles.css" />
+  </head>
+  <body>
+    <nav>
+      <!-- Logo with Name -->
+    <img class="logo" src="../images/Logo.svg" alt="logo">
+    <h4 class="logo-text">Alex<br>
+    Leybourne</h4>
+    <div class="nav-bg"></div>
+    </nav>
+<!-- Hamburger Menu and Menu items -->
+<!-- Hamburger Menu and Menu items -->
+<div class="menu-wrap">
+    <!-- Accessability aditions for menu clicks -->
+    <input tabindex="0" role="checkbox" title="Menu button" type="checkbox"  id="toggler" class="toggler"/>
+    <div class="hamburger" id="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <!-- Menu Items -->
+                <li><a class="menu-selected" href="#" alt="Article 1">Article</a></li>
+                <div class="underline"></div>
+                <li><a class="menu-link" href="../../index.html" alt="Home">Home</a></li>
+                <li><a class="menu-link" href="../about.html" alt="About">About</a></li>
+                <li><a class="menu-link" href="../skills.html" alt="Skills">Skills</a></li>
+                <li><a class="menu-link" href="../projects.html" alt="Projects">Projects</a></li>
+                <li><a class="menu-link" href="../blog.html" alt="Blog">Blog</a></li>
+                <li><a class="menu-link" href="../resume.html" alt="Contact">Resume</a></li>
+                <li><a class="menu-link" href="../contact.html" alt="Contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Good old shapes time! -->
+      <shapes>
+          <img class="shape-triangle" src="../images/Red-triangle.svg" alt="Red Triangle">
+          <img class="shape-circle" src="../images/Circle.svg" alt="Blue Circle">
+        <img class="shape-square" src="../images/Green-square.svg" alt="Green Square">
+        <img class="shape-squiggle" src="../images/Yellow-squiggle2.svg" alt="Yellow Squiggle">
+      </shapes>  
+    <main>
+      <div>   
+        <!-- Main Area -->
+        <div class="main-content">
+        <h4 class="header-text">Kahoot shortcut in Terminal</h4>
+            <p class="under-text"> by Alex Leybourne</p>
+          <br><br>
+                
+          <div class="image-holder">
+          <img src="../images/Article4.jpg" alt="Article 1 cover photo" class="image">
+          </div>  
+
+          <div class="text">
+            
+              <p> 
+                
+                  <img src="../images/Article4.jpg" alt="Article 1 cover photo" class="image-2"> 
+                  So many of you know Kahoot is the most important part of Coder Academy’s boot camps. Personally, I have only been able to make it to 2nd place, but with my extensive training, I will get that gold medal one day.
+                  Ok, so this won’t make you a Kahoot pro… but it will show you how to make your own shortcut in Terminal. So you’ll be one step closer to being a Terminal pro at least.
+                  Today we will be making a terminal shortcut that allows you to instantly open kahoot in your browser from terminal simply by typing “kahoot” and hitting enter.
+                  Tutorial Time:
+                  So to do this we need to make a shortcut also known as an “Alias”. To start off we want to navigate to our home directory by entering “cd ~”.
+                  This will take us to our root directory. we want to see if we have a file called “.bash_profile”. To do this we need to enter “ ls -a”. This will list all files in our directory including .hidden files.
+                  
+                  If you see “.bash_profile” already, fantastic! if not, don’t worry it’s easy to make one. To make a file just write “touch .bash_profile” and boom you just made a file. The next step is to edit the file, the easiest way to do so is by using the inbuilt text editor in terminal called Vim.
+                  To open the file to edit it type “vim .bash_profile” this will open the file up and to edit it you have to press “i”.
+                  
+                  Yours might look different to mine but that’s ok. Now it’s time to make our Alias. Our alias to open kahoot simply opens up the kahoot web page in our default browser. Type in [ alias kahoot=’open https://kahoot.it/’ ]
+                  
+                  You can use this to open any website of your choosing but just to be sure to include “http://” or “https://” in your weblink otherwise it will look for a local file or return an error instead. Now that you have entered in our alias. Press the ESC key and then type “:wq” to save and close the file.
+                  
+                  To make our new Alias to work we have to make Terminal reload the “.bash_profile”. Now to do this you can simply restart terminal but that's no fun. The other way to do it is to use a handy little snippet of code: “source ~/.bash_profile”. but as coders, we want to be even lazier and we can just type: “. ~/.bash_profile” to save ourselves some keystrokes. Now go ahead and try out your new Alias, if done correctly Kahoot should be opened up and ready for you to go for gold!
+                  
+                  Well, now you have the perfect shortcut to load up kahoot quickly from your terminal. Saving you some valuable seconds to prepare yourself for victory!
+                  If you are having any issues go through and carefully check your code and remember you can use “quotation marks” or ‘apostrophes’ and if you have copied and pasted code it can sometimes be finicky and will be best to type it out yourself.
+                  Now that you have entered the world of Aliases you might be already thinking of other helpful ones you could make for yourself. Well, believe it or not, other people have had that idea before and have actually compiled a nice list of handy bash shell aliases.
+                
+                </p>
+
+          </div>
+
+          <br>
+          <div class="button-link">
+              <a href="https://medium.com/@alexleybourne/im-fine-f6a5312b5630"  rel="noreferrer" target="_blank" alt="Medium link"><button>Read Original on Medium</button></a>
+            </div>
+            
+            <!-- Some Bottom Space -->
+          <br><br><br><br>
+        </div>  
+        
+    </main>
+    <script src="scripts/accessability.js"></script>
+  </body>
+</html>
