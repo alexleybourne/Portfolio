@@ -21,12 +21,6 @@ a {
 }
 
 /* Pretty self explanatory */
-.section-title {
-  padding: 2rem 0 0 0;
-  font-weight: 700;
-  font-size: 30px;
-  opacity: 0.6;
-}
 
 .articles {
   padding: 1rem 0 0 0;
@@ -83,20 +77,20 @@ a {
 
 .text {
   color: black;
-  font-size: 30px;
+  font-size: 10vw;
   font-weight: 700;
   padding: 16px 32px;
-  transform: translate(0vh,-15vh );
+  transform: translate(0vh,-30vw );
 }
 
 /* Buttons */
 button {
   position: relative;
-  transform: translate(0vh,-14vh );
-  color: #494949 !important;
+  transform: translate(0vh,-30vw );
+  color: black !important;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 4vw;
   font-weight: 700;
   background: #ffffff6c;
   padding: 10px;
@@ -226,17 +220,24 @@ button {
   button {
     position: relative;
     transform: translate(0vh,0vh );
-    color: #494949 !important;
+    color: black !important;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
-    background: #ffffff6c;
+    background: #ffffff00;
     padding: 10px;
     border: 4px solid black !important;
     display: inline-block;
     transition: all 0.4s ease 0s;
     border-radius: 10%;
+  }
+
+  button:hover {
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+    background: #ffffffbb;
   }
   
   
@@ -256,7 +257,7 @@ button {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 80%;
   }
   
   .container {

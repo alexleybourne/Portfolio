@@ -225,8 +225,8 @@ body {
   .me-image{
     z-index: -2;
     padding: 1rem 0 0 0;
-    height: 80vh;
-    width: auto;
+height: 80vh;
+width: auto;
   }
   /* Change shape positions and scale */
   .shape-circle {
