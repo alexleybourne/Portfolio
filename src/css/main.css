@@ -1,0 +1,279 @@
+:root {
+  --overlay-color: rgba(255, 255, 255, 0.9);
+  --menu-speed: 0.75s;
+}
+
+/* Help Accessability by provinding outline*/
+a:focus {
+  outline: 2px solid;
+  outline-offset: .15em;
+ }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+nav {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 75px;
+  height: auto;
+  padding: 1rem 5px 1rem 1rem;
+}
+
+.logo-text {
+  text-align: left;
+  padding: 0px;
+  font-weight: bolder;
+  line-height: 80%;
+}
+
+.nav-bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  height: 112px;
+  width: 100vw;
+  background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%,
+ rgba(255,255,255,1) 67%, rgba(255,255,255,0.3412552521008403) 83%, 
+ rgba(255,255,255,0) 100%);
+}
+
+header {
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+
+/* Setting font and background */
+/* PARTY MODE */
+body {
+background: linear-gradient(270deg, #1dfa00, #ff00bf);
+background-size: 400% 400%;
+animation: BackgroundGradient 1s ease infinite;
+}
+
+/* Background Animation aka Party Mode */
+@keyframes BackgroundGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+/* Main Are */
+.main-content {
+  margin: auto;
+  padding: 6rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+/* Main Text */
+.hero-text {
+  z-index: -1;
+  position: center;
+}
+
+.top-text {
+  font-size: 50px;
+}
+
+.bottom-text {
+  font-size: 30px;
+}
+/*  Pic of Me */
+.hero-image {
+  position: relative;
+  z-index: -2;
+  padding: 0;
+  margin: 0;
+}
+
+.me-image{
+  z-index: -2;
+  padding: 1rem 0 0 0;
+  width: 90%;
+  height: auto;
+}
+
+/* Shape Positions */
+.shape-circle {
+  position: absolute;
+  z-index: -3;
+  transform: translate(-330px, 90px);
+  width: 45vw;
+  height: auto;
+  animation: circle-grow 6s ease infinite;
+}
+
+.shape-triangle {
+  position: absolute;
+  z-index: -4;
+  width: 40vw;
+  height: auto;
+  animation: triangle-spin 10s linear infinite;
+}
+
+.shape-squiggle {
+  position: absolute;
+  z-index: 1;
+  transform: translate(-170px, 280px);
+  width: 46vw;
+  height: auto;
+  animation: squiggle-float 9s ease infinite;
+}
+/* Social Icons */
+.social-section {
+  padding: 1rem 10px 10px 10px;
+}
+
+.social-link {
+  width: 90px;
+  height: auto;
+  transition: 0.3s;
+}
+
+.social-link:hover {
+  opacity: 0.6;
+}
+
+/* Spin Animation for Triangle */
+@keyframes triangle-spin {
+  from { transform: translate(-160px, 50px) rotate(0deg); 
+    transform-origin: 50% 60%;}
+  to { transform:  translate(-160px, 50px) rotate(359deg); 
+       transform-origin: 50% 60%;}
+}
+/* Floating animation for Squiggle */
+@keyframes squiggle-float {
+  0% { transform: translate(-170px, 280px); }
+  50% { transform: translate(-170px, 240px); }
+}
+/* Growing Circle Animation */
+@keyframes circle-grow {
+  0% {  transform: scale(1.0)
+    translate(-330px, 90px); }
+  50% { transform: scale(1.1)
+    translate(-330px, 90px);}
+}
+
+
+/* Desktop Responsive Changes */
+@media (min-width:850px) {
+
+.nav-bg {
+  height: 16vh;
+}
+
+  .main-content {
+    margin: auto;
+    height: 100vh;
+    padding: 1rem 0 0 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Logo and Logo Text Bigger */
+  .logo {
+    width: 120px;
+    height: auto;
+    padding: 1rem 5px 1rem 1rem;
+  }
+  
+  .logo-text {
+    text-align: left;
+    padding: 0px;
+    font-weight: bolder;
+    font-size: 40px;
+  }
+  /* Text Bigger and Left */
+  .hero-text {
+    z-index: -1;
+    position: center;
+    order: -2;
+  }
+  
+  .top-text {
+    font-size: 5vw;
+  }
+  
+  .bottom-text {
+    font-size: 3vw;
+  }
+/* Socials moved under text */
+  .social-section {
+    order: -1;
+    padding: 1rem 10px 10px 10px;
+  }
+ /* Image Scale */
+  .me-image{
+    z-index: -2;
+    padding: 1rem 0 0 0;
+height: 80vh;
+width: auto;
+  }
+  /* Change shape positions and scale */
+  .shape-circle {
+    position: absolute;
+    z-index: -3;
+    transform: translate(-40vw, 30vh);
+    width: 40vh;
+    height: auto;
+    animation: circle-grow 6s ease infinite;
+  }
+  
+  .shape-triangle {
+    position: absolute;
+    z-index: -4;
+    width: 36vh;
+    height: auto;
+    animation: triangle-spin 10s linear infinite;
+  }
+  
+  .shape-squiggle {
+    position: absolute;
+    z-index: 1;
+    transform: translate(-14vw, 60vh);
+    width: 30vh;
+    height: auto;
+    animation: squiggle-float 9s ease infinite;
+  }
+
+/* Adjust shape positions in animation */
+  @keyframes triangle-spin {
+    from { transform: translate(-20vw, 4vh) rotate(0deg); 
+      transform-origin: 50% 60%;}
+    to { transform:  translate(-20vw, 4vh) rotate(359deg); 
+         transform-origin: 50% 60%;}
+  }
+  
+  @keyframes squiggle-float {
+    0% { transform: translate(-14vw, 60vh); }
+    50% { transform: translate(-14vw, 50vh); }
+  }
+  
+  @keyframes circle-grow {
+    0% {  transform: scale(1.0)
+      translate(-40vw, 30vh); }
+    50% { transform: scale(1.1)
+      translate(-40vw, 30vh);}
+  }
+}
+

@@ -1,0 +1,260 @@
+/* Contacts Page Styling */
+.main-content {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+/* Big text */
+.header-text {
+  position: center;
+  font-size: 50px;
+}
+/* Under text */
+.under-text {
+  font-weight: 700;
+  font-size: 16px;
+}
+/* Hides link styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Pretty self explanatory */
+
+.social-icons {
+  padding: 1rem 0 0 0;
+  font-size: 26px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Padding */
+.single-icon {
+  padding: 1rem;
+  font-size: 20px;
+}
+
+.social-icon {
+  height: auto;
+  width: 130px;
+  transition: all ease 1s;
+}
+/* Hover makes them groww */
+a:hover > .social-icon {
+  height: auto;
+  width: 140px;
+}
+
+/* Shapes! */
+.shapes {
+  padding: 0;
+  margin: 0;
+}
+
+.shape-squiggleUnder {
+  position: absolute;
+  z-index: -4;
+  width: 40vw;
+  height: auto;
+  transform: translate(-6vw, 19vh);
+}
+
+.shape-squiggle1 {
+  position: absolute;
+  z-index: -4;
+  width: 34vw;
+  height: auto;
+  animation: squiggle1-spin 10s linear infinite;
+}
+
+.shape-squiggle2 {
+  position: absolute;
+  z-index: -3;
+  transform: translate(-70vw, 70vh);
+  width: 50vw;
+  height: auto;
+  animation: squiggle2-grow 10s ease infinite;
+}
+
+.shape-squiggle3 {
+  position: absolute;
+  z-index: -3;
+  width: 55vw;
+  height: auto;
+  animation: squiggle-spin 22s linear infinite;
+}
+
+.shape-squiggle {
+  position: absolute;
+  z-index: -3;
+  transform: translate(10vw, 40vh);
+  width: 30vw;
+  height: auto;
+  animation: squiggle-float 5s ease infinite;
+}
+
+@keyframes squiggle1-spin {
+  from {
+    transform: translate(10vw, 90vh) rotate(0deg);
+    transform-origin: 50% 60%;
+  }
+  to {
+    transform: translate(10vw, 90vh) rotate(359deg);
+    transform-origin: 50% 60%;
+  }
+}
+
+@keyframes squiggle2-grow {
+  0% {
+    transform: scale(1) translate(-70vw, 70vh);
+  }
+  50% {
+    transform: scale(1.2) translate(-60vw, 70vh);
+  }
+}
+
+@keyframes squiggle-spin {
+  from {
+    transform: translate(-60vw, 40vh) rotate(0deg);
+    transform-origin: 50% 60%;
+  }
+  to {
+    transform: translate(-60vw, 40vh) rotate(359deg);
+    transform-origin: 50% 60%;
+  }
+}
+
+@keyframes squiggle-float {
+  0% {
+    transform: translate(10vw, 40vh);
+  }
+  50% {
+    transform: translate(10vw, 50vh);
+  }
+} 
+
+
+/* Laptop / desktop adjustments */
+
+@media (min-width: 850px) {
+  .header-text {
+    font-size: 150px;
+    padding: 4rem 0 0 0;
+  }
+
+  .under-text {
+    font-size: 30px;
+  }
+
+  .social-icons {
+    padding: 4rem 2rem 2rem 2rem;
+    font-size: 26px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .social-icon {
+    height: auto;
+    width: 220px;
+    transition: all ease 1s;
+    background-color: rgba(rgba(20, 137, 255, 0))
+  }
+  
+  a:hover > .social-icon {
+    height: auto;
+    width: 250px;
+    background-color: rgba(rgba(20, 137, 255, 0.74))
+  }
+ /* Shapes.... Agaain.... */
+
+ .shape-squiggleUnder {
+  position: absolute;
+  z-index: -4;
+  width: 20vw;
+  height: auto;
+  transform: translate(-1vw, 27vh);
+}
+
+ .shape-squiggle1 {
+  position: absolute;
+  z-index: -4;
+  width: 18vw;
+  height: auto;
+  animation: squiggle1-spin 10s linear infinite;
+}
+
+.shape-squiggle2 {
+  position: absolute;
+  z-index: -3;
+  transform: translate(-50vw, 70vh);
+  width: 20vw;
+  height: auto;
+  animation: squiggle2-grow 10s ease infinite;
+}
+
+.shape-squiggle3 {
+  position: absolute;
+  z-index: -3;
+  width: 20vw;
+  height: auto;
+  animation: squiggle-spin 22s linear infinite;
+}
+
+.shape-squiggle {
+  position: absolute;
+  z-index: -3;
+  transform: translate(30vw, 20vh);
+  width: 15vw;
+  height: auto;
+  animation: squiggle-float 5s ease infinite;
+}
+
+@keyframes squiggle1-spin {
+  from {
+    transform: translate(-50vw, 30vh) rotate(0deg);
+    transform-origin: 50% 60%;
+  }
+  to {
+    transform: translate(-50vw, 30vh) rotate(359deg);
+    transform-origin: 50% 60%;
+  }
+}
+
+@keyframes squiggle2-grow {
+  0% {
+    transform: scale(1) translate(-50vw, 70vh);
+  }
+  50% {
+    transform: scale(1.2) translate(-50vw, 70vh);
+  }
+}
+
+@keyframes squiggle-spin {
+  from {
+    transform: translate(25vw, 70vh) rotate(0deg);
+    transform-origin: 50% 60%;
+  }
+  to {
+    transform: translate(25vw, 70vh) rotate(359deg);
+    transform-origin: 50% 60%;
+  }
+}
+
+@keyframes squiggle-float {
+  0% {
+    transform: translate(30vw, 20vh);
+  }
+  50% {
+    transform: translate(35vw, 30vh);
+  }
+} 
+}

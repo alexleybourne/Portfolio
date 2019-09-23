@@ -1,0 +1,290 @@
+/* ABOUT PAGE STYLING */
+
+/* Layouts for main contetn area */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+/* Large Text */
+.hero-text-about {
+  position: center;
+  font-size: 50px;
+}
+
+/* Text parts sizing etc. */
+.text-one {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  padding: 1.5rem 4rem 1.5rem 4rem;
+  text-align: left;
+}
+
+.text-two {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  padding: 1.5rem 2rem 1.5rem 4rem;
+  text-align: right;
+}
+
+.text-three {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  padding: 1.5rem 4rem 1.5rem 4rem;
+  text-align: left;
+}
+
+.text-four {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  padding: 1.5rem 2rem 1.5rem 4rem;
+  text-align: right;
+}
+
+/* Lines */
+.green-line {
+  height: auto;
+  width: 18px;
+  padding: 0 10px 0 0;
+}
+
+.blue-line {
+  height: auto;
+  width: 18px;
+  padding: 0 0 0 10px;
+}
+
+.red-line {
+  height: auto;
+  width: 18px;
+  padding: 0 10px 0 0;
+}
+
+.yellow-line {
+  height: auto;
+  width: 18px;
+  padding: 0 0 0 10px;
+}
+
+/* Shapes */
+
+.shape-circle-about {
+  position: absolute;
+  z-index: -3;
+  transform: translate(40px, -610px);
+  width: 20vw;
+  height: auto;
+}
+
+.shape-circle2-about {
+  position: absolute;
+  z-index: -3;
+  transform: translate(-170px, -400px);
+  width: 4vw;
+  height: auto;
+  animation: circle-grow-about 9s ease infinite;
+}
+
+.shape-square-about {
+  position: absolute;
+  z-index: -3;
+  width: 4vw;
+  height: auto;
+  animation: square-spin-about 22s linear infinite;
+}
+
+.shape-triangle-about {
+  position: absolute;
+  z-index: -3;
+  width: 10vw;
+  height: auto;
+  animation: triangle-spin-about 10s linear infinite;
+}
+
+.shape-squiggle-about {
+  position: absolute;
+  z-index: -3;
+  transform: translate(-230px, -60px);
+  width: 15vw;
+  height: auto;
+  animation: squiggle-float-about 5s ease infinite;
+}
+
+ /* Animations */
+@keyframes square-spin-about {
+  from {
+    transform: translate(150px, -550px) rotate(0deg);
+    transform-origin: 50% 60%;
+  }
+  to {
+    transform: translate(150px, -550px) rotate(359deg);
+    transform-origin: 50% 60%;
+  }
+}
+
+@keyframes circle-grow-about {
+  0% {
+    transform: scale(1) translate(-170px, -400px);
+  }
+  50% {
+    transform: scale(1.2) translate(-170px, -400px);
+  }
+}
+
+@keyframes triangle-spin-about {
+  from {
+    transform: translate(130px, -280px) rotate(0deg);
+    transform-origin: 50% 60%;
+  }
+  to {
+    transform: translate(130px, -280px) rotate(359deg);
+    transform-origin: 50% 60%;
+  }
+}
+
+@keyframes squiggle-float-about {
+  0% {
+    transform: translate(-230px, -60px);
+  }
+  50% {
+    transform: translate(-230px, -120px);
+  }
+} 
+
+
+/* Adjustments for desktop
+Mainly the painful shapes */
+
+@media (min-width: 1000px) {
+  .main-content {
+    display: flex;
+  
+      flex-direction: row;
+      flex-wrap: wrap;
+      overflow-x: hidden;
+      align-content: center;
+      justify-content: center;
+      position: center;
+  }
+  
+    .hero-text-about {
+    padding: 10vh 0 0 0;
+    position: center;
+    font-size: 10vw;
+  }
+
+  .row {
+    padding: 0 0 10vh 0;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  
+/* Green line */
+  .text-one { order: 4; 
+    width: 50%;}
+
+  /* Blue Line */
+  .text-two   { order: 2;
+    width: 50%; }
+
+/* Red line */
+  .text-three { order: 3;
+    width: 50%; } 
+
+  /* Yellow Line */
+  .text-four { order: 3; 
+    width: 50%;}
+
+  .shape-circle-about {
+    position: absolute;
+    z-index: -3;
+    transform: translate(110px, -680px);
+    width: 16vw;
+    height: auto;
+  }
+
+  .shape-circle2-about {
+    position: absolute;
+    z-index: -3;
+    transform: translate(-480px, -580px);
+    width: 5vw;
+    height: auto;
+    animation: circle-grow-about 9s ease infinite;
+  }
+  
+  .shape-square-about {
+    position: absolute;
+    z-index: -3;
+    width: 6vw;
+    height: auto;
+    animation: square-spin-about 22s linear infinite;
+  }
+  
+  .shape-triangle-about {
+    position: absolute;
+    z-index: -3;
+    width: 7vw;
+    height: auto;
+    animation: triangle-spin-about 10s linear infinite;
+  }
+  
+  .shape-squiggle-about {
+    position: absolute;
+    z-index: -3;
+    transform: translate(410px, -120px);
+    width: 10vw;
+    height: auto;
+    animation: squiggle-float-about 5s ease infinite;
+  }
+  
+  /* Animations */
+@keyframes square-spin-about {
+    from {
+      transform: translate(-440px, -180px) rotate(0deg);
+      transform-origin: 50% 60%;
+    }
+    to {
+      transform: translate(-440px, -180px) rotate(359deg);
+      transform-origin: 50% 60%;
+    }
+  }
+  
+  @keyframes circle-grow-about {
+    0% {
+      transform: scale(1) translate(-480px, -580px);
+    }
+    50% {
+      transform: scale(1.1) translate(-480px, -580px);
+    }
+  }
+  
+  @keyframes triangle-spin-about {
+    from {
+      transform: translate(410px, -580px);
+      transform-origin: 50% 60%;
+    }
+    to {
+      transform: translate(410px, -580px) rotate(359deg);
+      transform-origin: 50% 60%;
+    }
+  }
+  
+  @keyframes squiggle-float-about {
+    0% {
+      transform: translate(410px, -110px);
+    }
+    50% {
+      transform: translate(410px, -140px);
+    }
+  } 
+  
+}
