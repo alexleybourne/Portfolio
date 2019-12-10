@@ -12,6 +12,7 @@
 .big-pic {
   height: auto;
   width: 60vw;
+  border-radius: 10px;
   }
 
 .under-text {
@@ -183,9 +184,11 @@ p {
   }
 
   .big-pic {
-    padding: 4rem 0 0 0;
+    border-radius: 10px;
+    margin: 4rem 0 0 0;
   height: auto;
   width: 40vw;
+  
   }
 
   .single-project {
